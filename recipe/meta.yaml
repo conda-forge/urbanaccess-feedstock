@@ -9,7 +9,7 @@ source:
   sha256: "864e350fced5b80040de6052ce78ea84361d07516cb18d1d6d9159f5307cce27"
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - geopy >=1.11.0
-    - matplotlib >=2.0
+    - matplotlib-base >=2.0
     - numpy >=1.11
     - osmnet >=0.1.4
     - pandana >=0.2.0
