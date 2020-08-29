@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ test:
 
 about:
   home: https://github.com/UDST/urbanaccess
-  license: AGPL-3.0
+  license: AGPL-3.0-or-later
   license_family: AGPL
   license_file: License.txt
   summary: A tool for creating GTFS transit and OSM pedestrian networks for use in Pandana accessibility analyses
@@ -46,3 +46,5 @@ about:
 extra:
   recipe-maintainers:
     - ocefpaf
+    - sablanchard
+    - smmaurer
