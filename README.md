@@ -3,13 +3,11 @@ About urbanaccess
 
 Home: https://github.com/UDST/urbanaccess
 
-Package license: AGPL-3.0
+Package license: AGPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/urbanaccess-feedstock/blob/master/LICENSE.txt)
 
 Summary: A tool for creating GTFS transit and OSM pedestrian networks for use in Pandana accessibility analyses
-
-
 
 Current build status
 ====================
@@ -117,4 +115,6 @@ Feedstock Maintainers
 =====================
 
 * [@ocefpaf](https://github.com/ocefpaf/)
+* [@sablanchard](https://github.com/sablanchard/)
+* [@smmaurer](https://github.com/smmaurer/)
 
