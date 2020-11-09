@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: urbanaccess
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/u/urbanaccess/urbanaccess-{{ version }}.tar.gz
-  sha256: 0c9ac3d84be1aebf48791caa75b43baa00198f789a1043fa1796cb85a8e30ec4
+  sha256: a00ff67488eeec62d5c68bc07f1ee6cb62dc867ae0872241544dc2e924e28939
 
 build:
   number: 0
