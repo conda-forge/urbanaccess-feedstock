@@ -5,17 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/u/urbanaccess/urbanaccess-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/u/urbanaccess/urbanaccess-{{ version }}.tar.gz
   sha256: a00ff67488eeec62d5c68bc07f1ee6cb62dc867ae0872241544dc2e924e28939
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
     - geopy >=1.11.0
@@ -24,13 +24,15 @@ requirements:
     - osmnet >=0.1.4
     - pandana >=0.2.0
     - pandas >=0.17.0
-    - python
+    - python >={{ python_min }}
     - pyyaml >=3.11
     - requests >=2.9.1
     - scikit-learn >=0.17.1
     - six >=1.11
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - urbanaccess
     - urbanaccess.gtfs
